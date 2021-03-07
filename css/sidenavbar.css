@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.pad0 {
+    padding: 0;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75em 5em;
+    background-color: #ffffff11;
+    display: flex!important;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+header .logo a h4 {
+    font-weight: bold;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #5F727D;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #5F727D;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #43CB83;
+    text-decoration: underline;
+}
+
+header .search2 {
+    display: none;
+}
+
+.toggle {
+    line-height: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn2 {
+    display: none;
+}
+
+.btn1 button {
+    color: #43CB83;
+    display: block;
+}
+
+
+/* mobile view */
+
+@media all and (max-width: 468px) and (min-width: 320px) {
+    header {
+        padding: 0 20px;
+    }
+    .toggle {
+        display: block;
+        color: #5F727D;
+        order: 1;
+    }
+    header .logo {
+        order: 2;
+        margin: 0 auto;
+        padding: 0;
+    }
+    header nav {
+        position: absolute;
+        width: 50%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: -100%;
+        background-color: #EBF7FC;
+        transition: 0.5s;
+    }
+    .btn2 {
+        display: none;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul li a {
+        color: #5F727D;
+        border-bottom: 1px solid #5F727D;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* tab-view */
+
+@media all and (max-width: 768px) and (min-width: 468px) {
+    header {
+        padding: 0 20px;
+    }
+    .toggle {
+        display: block;
+        color: #5F727D;
+        order: 1;
+    }
+    header .logo {
+        order: 2;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .btn2 {
+        width: auto;
+        order: 3;
+        display: block;
+        color: #43CB83;
+    }
+    .btn1 {
+        display: none;
+    }
+    .list-items {
+        order: 4;
+    }
+    header nav {
+        position: absolute;
+        width: 25%;
+        height: calc(100vh - 50px);
+        top: 50px;
+        left: -100%;
+        background-color: #EBF7FC;
+        transition: 0.5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul li a {
+        color: #5F727D;
+        border-bottom: 1px solid #5F727D;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
