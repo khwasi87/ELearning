@@ -79,6 +79,10 @@ header .search2 {
     display: block;
 }
 
+.item-list-btn{
+    display:none;
+}
+
 
 /* mobile view */
 
@@ -118,6 +122,12 @@ header .search2 {
     header nav ul {
         display: flex;
         flex-direction: column;
+    }
+    .btn1{
+        display:none;
+    }
+    .item-list-btn{
+        display:block;
     }
 }
 
@@ -169,5 +179,8 @@ header .search2 {
     header nav ul {
         display: flex;
         flex-direction: column;
+    }
+    .item-list-btn{
+        display:none
     }
 }
