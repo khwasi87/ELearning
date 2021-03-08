@@ -79,7 +79,7 @@ header .search2 {
     display: block;
 }
 
-.item-list-btn{
+.list-items-btn{
     display:none;
 }
 
@@ -126,7 +126,7 @@ header .search2 {
     .btn1{
         display:none;
     }
-    .item-list-btn{
+    .list-items-btn{
         display:block;
     }
 }
@@ -180,7 +180,7 @@ header .search2 {
         display: flex;
         flex-direction: column;
     }
-    .item-list-btn{
+    .list-items-btn{
         display:none
     }
 }
